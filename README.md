@@ -181,6 +181,22 @@ To set up your database:
 4. Initialize and migrate database with `pnpm run db:generate` and `pnpm run db:migrate`
 5. Start the development server with `pnpm run dev`
 
+## Deployment to Vercel
+
+For detailed deployment instructions, see [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
+
+### Quick Deployment Steps:
+1. Push your code to GitHub
+2. Import repository in Vercel
+3. Set environment variables in Vercel Dashboard:
+   - `DATABASE_URL` (from Neon)
+   - `CLERK_SECRET_KEY` (from Clerk Dashboard)
+   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` (from Clerk Dashboard)
+4. Deploy and configure Clerk domains
+5. Run database migrations
+
+See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) for complete instructions.
+
 ## Licensing
 
 Ausbiz Consulting Pty Ltd provides licenses for non-commercial use only.
